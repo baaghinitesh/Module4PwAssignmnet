@@ -1,0 +1,247 @@
+Q1. Explain the key features of Python that make it a popular choice for programing
+
+Ans->   (i) python is easy to write/code very high level programing language just like English language.
+	(ii) python supports oops
+	(iii) python has huge number of libraries for use(nearly 137,000) 
+	(iv) Free and open source
+	(v) python is portable language
+
+Q2. Describe the role of predefined keywords in Python and provide examples of how they are used in a program.
+Ans->   python keywords are some predefine and reserved words in python which has some special meaning. we cannot use those words in programing for declaring variables and function name.
+	
+	{import keyword  
+	help("keywords")  } if we write this on code editor then we see the list of keywords in python which are
+
+	Here is a list of the Python keywords.  Enter any keyword to get more help. (Copied from code editor)
+
+	False               class               from                or
+	None                continue            global              pass
+	True                def                 if                  raise
+	and                 del                 import              return
+	as                  elif                in                  try
+	assert              else                is                  while
+	async               except              lambda              with
+	await               finally             nonlocal            yield
+	break               for                 not
+
+	True, False, None keyword use in program
+	print( 3 == 3 )  
+	print( 6 > 9 )  
+	print( True or False )  
+	print( 9 <= 28 )  
+	print( 6 > 9 )  
+	print( True and False )
+	print(True+True)
+	
+	output-- 
+	True
+	False
+	True
+	True
+	False
+	False
+	2
+
+Q3.  Compare and contrast mutable and immutable objects in Python with examples
+
+Ans->  	(i) Immutable objects are quicker to access and are diffiult to change because it involves the creation of a copy. Whereas mutable objects are easy to change.
+	(ii) The use of mutable objects is recommended when there is a need to change the size or content of the object.
+	(iii) Exception: However, there is an exception in immutability as well. We know that a tuple in Python is immutable. But the tuple consists of a sequence of names with 	unchangeable 	bindings to objects. Consider a tuple
+
+	Immutable Objects are of in-built datatypes like int, float, bool, string, Unicode, and tuple. In simple words, an immutable object can’t be changed after it is created. 
+	
+	# tuples are immutable
+	tuple1 = (0, 1, 2, 3) 
+	tuple1[0] = 4 
+	print(tuple1) 
+
+	# strings are immutable 
+	message = "Hello world"
+	message[0] = 'p' 
+	print(message)
+
+	Mutable Objects are of type Python list, Python dict, or Python set. Custom classes are generally mutable. 
+	
+	list = [1, 2, 3]
+	list.append(4)
+	print(list) 
+
+	list.insert(1, 5)
+	print(list) 
+
+	list.remove(2)
+	print(list) 
+
+	popped_element = list.pop(0)
+	print(list)         
+	print(popped_element)  
+
+
+Q4.  Discuss the different types of operators in Python and provide examples of how they are used.
+
+Ans->   Python language supports various types of operators, which are:
+	(i) Arithmetic Operators:-
+
+	+	Addition
+	-	Subtraction
+	*	Multiplication
+	/	Division
+	%	Modulus
+	**	Exponent
+	//	Floor Division
+
+	(ii)Comparison (Relational) Operators:-
+
+	==	Equal	
+	!=	Not Equal
+	>	Greater Than
+	<	Less Than
+	>=	Greater than or Equal to
+	<=	Less than or Equal to
+
+	(iii)Assignment Operators:-
+	
+	=	Assignment Operator
+	+=	Addition Assignment
+	-=	Subtraction Assignment
+	*=	Multiplication Assignment
+	/=	Division Assignment
+	%=	Remainder Assignment
+	**=	Exponent Assignment
+	//=	Floor Division Assignment
+
+	(iv)Bitwise Operators:-
+
+	&	Binary AND
+	|	Binary OR
+	^	Binary XOR
+	~	Binary Ones Complement
+	~	Binary Ones Complement
+	<<	Binary Left Shift
+	>>	Binary Right Shift
+
+	(v)Membership Operators
+	(vi)Identity Operators
+	(vii) Logical operator
+	
+
+Q5. explain the concept of type casting in Python with examples.
+
+Ans->   Type casting is a method used to change the variables declared in a certain data type into a different data type to match the operation required to be performed by programmer. In 	python, this feature can be accomplished by using constructor functions like int(), string(), float(), etc. The type casting process’s execution can be performed by using two 	different types of type casting, such as implicit type casting and explicit type casting.
+
+	Implicit Type casting:- Python automatically converts one data type to another data type. This process doesn’t need any user involvement Python promotes the conversion of lower 	data type, for example, integer to higher data type says float to avoid data loss. This type of conversion or type casting is called UpCasting.
+
+	Explicit Type casting:- In Explicit Type conversion, the user or programmer converts the data type of an object to the required data type. In Python we use predefined functions 	like int(), float(), str(), bool() etc to perform explicit type conversion.
+
+
+Q6. How do conditional statements wok in Python? Illustrate with examples
+
+Ans->   Conditional Statements are statements in Python that provide a choice for the control flow based on a condition. It means that the control flow of the Python program will be 	decided based on the outcome of the condition.
+
+	Types of Conditional Statements in Python
+	1. If Conditional Statement in Python
+	
+	if 10 > 5:
+    		print("10 greater than 5")
+
+	print("Program ended")
+
+	
+	2. If else Conditional Statements in Python
+	
+	x = 3
+	if x == 4:
+    		print("Yes")
+	else:
+    		print("No")
+
+	
+	3. Nested if..else Conditional Statements in Python
+	
+	letter = "A"
+
+	if letter == "B":
+    		print("letter is B")
+
+	else:
+
+    		if letter == "C":
+        		print("letter is C")
+
+    		else:
+
+        		if letter == "A":
+            			print("letter is A")
+
+        		else:
+            			print("letter isn't A, B and C")
+
+
+	4. If-elif-else Conditional Statements in Python
+	
+	letter = "A"
+
+	if letter == "B":
+    		print("letter is B")
+
+	elif letter == "C":
+   		print("letter is C")
+
+	elif letter == "A":
+    		print("letter is A")
+
+	else:
+    		print("letter isn't A, B or C")
+	
+Q7. Describe the different types of loops in Python and their use cases with examples.
+
+Ans->   In python  For, While and Nested Loops
+	(i) While Loop in Python:-
+
+	In Python, a while loop is used to execute a block of statements repeatedly until a given condition is satisfied. When the condition becomes false, the line immediately after the 	loop in the program is executed.
+	
+	count = 0
+	while (count < 3):
+    		count = count + 1
+    		print("Hello Nitesh")
+
+	(ii) For Loop in Python:-
+
+	For loops are used for sequential traversal. For example: traversing a list or string or array etc.
+	
+	n = 4
+	for i in range(0, n):
+    		print(i)
+
+	(iii) Nested loops
+
+	x = [1, 2]
+	y = [4, 5]
+
+	for i in x:
+  		for j in y:
+   			 print(i, j)
+
+
+
+
+GitHub link for codes and images of output :-  https://github.com/baaghinitesh/python-basics-assignment-module-2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
